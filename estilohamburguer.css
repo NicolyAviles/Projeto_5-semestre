@@ -1,0 +1,93 @@
+ *{
+	margin: 0px;
+	padding: 0px;
+}
+
+header p{
+	font-family: Apple Chancery, cursive;
+	font-size: 28px;
+}
+
+.btn{
+	overflow: hidden;
+	font-family: arial;
+	font-size: 18px;
+	font-weight: 700;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	color: black;
+	display: inline-block;
+	text-decoration: none;
+	background: #DCDCDC;
+}
+
+.carrossel{
+	width: 658px;
+	height: 440px;
+	outline: 3px solid black;
+	overflow: hidden;
+
+	margin: 50px auto;
+	box-shadow: 10px 10px 15px rgba(0,0,0,0.7);
+}
+
+.carrossel ul{
+	display: flex;
+	list-style: none;
+	width: 1974px;
+	height: 440px;
+}
+
+.carrossel li{
+	position: relative;
+	animation: slide 10s infinite ease-out;
+}
+
+@keyframes slide{
+	0%{right: 0px}
+	20%{right: 0px}
+
+	30%{right: 658px}
+	40%{right: 658px}
+
+	50%{right: 1316px}
+	60%{right: 1316px}
+
+	70%{right: 1974px}
+	80%{right: 1974px}
+
+	100%{right: 0px}
+}
+
+.produtos{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.produto{
+	margin-bottom: 20px;
+}
+
+.produto a{
+	text-decoration: none;
+
+}
+
+.produto p{
+	background: #694b48;
+	color: whitesmoke;
+	font-family: Apple Chancery, cursive;
+	padding: 3px 7px;
+	text-align: center;
+}
+
+.produto p:hover {
+	transform: rotate(5deg);
+}
+
+footer{
+	text-align: right;
+	font-family: sans-serif;
+}

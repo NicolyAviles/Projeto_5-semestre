@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <link rel="stylesheet" type="text/css" href="estiloescolhas.css" media="screen">
+
+        <title>Escolhas</title>
+    </head>
+
+    <body>  
+
+        <div>
+            <h1 id="titulo">Do seu jeito!</h1>
+            <p id="subtitulo">Monte seu lanche como quiser</p>
+            <br>
+        </div>
+
+        <form>
+
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset> 
+
+            <fieldset class="grupo">
+
+                <div class="campo">
+                    <label for="telefone"><strong>Telefone</strong></label>
+                    <input type="number" name="telefone" id="telefone" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email"><strong>Email</strong></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+            </fieldset>
+            <fieldset class="grupo">
+
+                <div class="campo">
+                    <label for="rua"><strong>Nome da Rua</strong></label>
+                    <input type="text" name="rua" id="rua" required>
+                </div>
+
+
+                <div class="campo">
+                    <label for="casa"><strong>Número da Casa</strong></label>
+                    <input type="number" name="casa" id="casa" required>
+                </div>
+            </fieldset> 
+
+            <div class="campo">
+                <label><strong>Selecione a quantidade desejada:</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="1" checked>1
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="2">2
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="2">3
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="4">4
+                </label>
+            </div>
+
+            <!--
+            <div class="campo">
+                <label for="senioridade"><strong>Senioridade</strong></label>
+                <select id="senioridade" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Júnior</option>
+                  <option>Pleno</option>
+                  <option>Sênior</option>
+                </select>
+            </div>
+            
+             -->
+
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>Selecione a forma de pagamento desejada:</strong></label><br><br>
+                    <input type="checkbox" id="debito" name="debito" value="debito">
+                    <label for="debito"> Débito</label>
+                    <input type="checkbox" id="credito" name="credito" value="credito">
+                    <label for="credito"> Credito</label>
+                    <input type="checkbox" id="pix" name="pix" value="pix">
+                    <label for="pix"> Pix</label>
+                    <input type="checkbox" id="dinheiro" name="dinheiro" value="dinheiro">
+                    <label for="dinheiro"> Dinheiro</label>
+                </div>
+            </fieldset>
+           
+
+            <div class="campo">
+                <br>
+                <label for="experiencia"><strong>Observações do pedido: </strong></label>
+                <textarea rows="1" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div>            
+
+        </form>
+
+        <button class="botao" type="submit" onsubmit="">Concluído</button>
+    </body>
+
+</html>
